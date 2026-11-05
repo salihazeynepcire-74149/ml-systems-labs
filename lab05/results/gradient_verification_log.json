@@ -1,0 +1,108 @@
+{
+  "student": "Saliha Zeynep Cire (74149)",
+  "target_expression": "((a * b + c) ** 2).relu().sum()",
+  "forward_loss_custom": 25.390025000000005,
+  "forward_loss_torch": 25.390025000000005,
+  "max_torch_error": 0.0,
+  "max_central_diff_error": 2.59983004013975e-08,
+  "threshold": 1e-06,
+  "status": "PASSED",
+  "table": [
+    {
+      "identifier": "a[0]",
+      "custom_gradient": 9.328000000000003,
+      "torch_gradient": 9.328000000000003,
+      "central_diff_gradient": 9.32800000796874,
+      "error_vs_torch": 0.0,
+      "error_vs_cd": 7.968736781549524e-09
+    },
+    {
+      "identifier": "a[1]",
+      "custom_gradient": -15.552000000000001,
+      "torch_gradient": -15.552000000000001,
+      "central_diff_gradient": -15.552000025564894,
+      "error_vs_torch": 0.0,
+      "error_vs_cd": 2.556489242522275e-08
+    },
+    {
+      "identifier": "a[2]",
+      "custom_gradient": 1.152,
+      "torch_gradient": 1.152,
+      "central_diff_gradient": 1.151999988735497,
+      "error_vs_torch": 0.0,
+      "error_vs_cd": 1.1264502886021432e-08
+    },
+    {
+      "identifier": "a[3]",
+      "custom_gradient": 3.8350000000000004,
+      "torch_gradient": 3.8350000000000004,
+      "central_diff_gradient": 3.83500001532866,
+      "error_vs_torch": 0.0,
+      "error_vs_cd": 1.532865967490693e-08
+    },
+    {
+      "identifier": "b[0]",
+      "custom_gradient": -6.7840000000000025,
+      "torch_gradient": -6.7840000000000025,
+      "central_diff_gradient": -6.783999992876488,
+      "error_vs_torch": 0.0,
+      "error_vs_cd": 7.123514222939775e-09
+    },
+    {
+      "identifier": "b[1]",
+      "custom_gradient": 16.416,
+      "torch_gradient": 16.416,
+      "central_diff_gradient": 16.4160000259983,
+      "error_vs_torch": 0.0,
+      "error_vs_cd": 2.59983004013975e-08
+    },
+    {
+      "identifier": "b[2]",
+      "custom_gradient": 0.408,
+      "torch_gradient": 0.408,
+      "central_diff_gradient": 0.4079999982309346,
+      "error_vs_torch": 0.0,
+      "error_vs_cd": 1.7690653941748735e-09
+    },
+    {
+      "identifier": "b[3]",
+      "custom_gradient": -3.6875,
+      "torch_gradient": -3.6875,
+      "central_diff_gradient": -3.687499994242671,
+      "error_vs_torch": 0.0,
+      "error_vs_cd": 5.757328835898079e-09
+    },
+    {
+      "identifier": "c[0]",
+      "custom_gradient": -4.240000000000001,
+      "torch_gradient": -4.240000000000001,
+      "central_diff_gradient": -4.239999995547805,
+      "error_vs_torch": 0.0,
+      "error_vs_cd": 4.45219594524815e-09
+    },
+    {
+      "identifier": "c[1]",
+      "custom_gradient": -8.64,
+      "torch_gradient": -8.64,
+      "central_diff_gradient": -8.639999986570501,
+      "error_vs_torch": 0.0,
+      "error_vs_cd": 1.3429499290396052e-08
+    },
+    {
+      "identifier": "c[2]",
+      "custom_gradient": 0.48,
+      "torch_gradient": 0.48,
+      "central_diff_gradient": 0.4799999864246729,
+      "error_vs_torch": 0.0,
+      "error_vs_cd": 1.3575327084680566e-08
+    },
+    {
+      "identifier": "c[3]",
+      "custom_gradient": 2.95,
+      "torch_gradient": 2.95,
+      "central_diff_gradient": 2.949999995394137,
+      "error_vs_torch": 0.0,
+      "error_vs_cd": 4.605863246354147e-09
+    }
+  ]
+}

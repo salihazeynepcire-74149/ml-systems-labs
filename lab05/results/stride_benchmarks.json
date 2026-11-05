@@ -1,0 +1,33 @@
+{
+  "student": "Saliha Zeynep Cire (74149)",
+  "eager_latency_us": 45.831600087694824,
+  "traced_latency_us": 38.59869996085763,
+  "speedup_traced": 1.1873871434574732,
+  "contiguous_props": {
+    "shape": [
+      2048,
+      2048
+    ],
+    "stride": [
+      2048,
+      1
+    ],
+    "is_contiguous": true
+  },
+  "non_contiguous_props": {
+    "shape": [
+      2048,
+      2048
+    ],
+    "stride": [
+      1,
+      2048
+    ],
+    "is_contiguous": false
+  },
+  "sum_contiguous_ms": 0.18737300008069724,
+  "sum_non_contiguous_ms": 0.359351999941282,
+  "stride_penalty_factor": 1.9178430178655268,
+  "contiguous_allocation_ms": 8.584872999927029,
+  "graph_ir_summary": "graph(%self.1 : __torch__.MathematicalMoonsNet,\n      %x : Float(64, 2, strides=[2, 1], requires_grad=0, device=cpu)):\n  %output_sigmoid : __torch__.torch.nn.modules.activation.Sigmoid = prim::GetAttr[name=\"output_sigmoid\"](%self.1)\n  %affine2 : __torch__.torch.nn.modules.linear.___torch_mangle_0.Linear = prim::GetAttr[name=\"affine2\"](%self.1)\n  %activation : __torch__.torch.nn.modules.activation.ReLU = prim::GetAttr[name=\"activation\"](%self.1)\n  %affine1 : __torch__.torch.nn.modules.linear.Linear = prim::GetAttr[name=\"affine1\"](%self.1)\n  %bias.1 : Tensor = prim::GetAttr[name=\"bias\"](%affine1"
+}
