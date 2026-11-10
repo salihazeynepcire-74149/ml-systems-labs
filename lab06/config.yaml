@@ -1,8 +1,0 @@
-student: "Saliha Zeynep Cire"
-student_id: "74149"
-experiment: "lab6_74149"
-seed: 55
-width: 16
-workers: 2
-sgd_lr: 0.03
-adam_lr: 0.001
