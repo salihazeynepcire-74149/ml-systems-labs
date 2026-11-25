@@ -1,0 +1,52 @@
+# Machine Learning (CII5SE039CI) - Lab 6, Group 01
+# Fashion-MNIST and CNN extracted from the supplied Lab 3 notebook.
+student:
+  name: "Saliha Zeynep Cire"
+  id: "74149"
+  course: "CII5SE039CI"
+  group: "01"
+project:
+  title: "AI-Based Flower Recognition"
+  seed: 42
+  output_dir: "results"
+  experiment_name: "Lab6_74149_FashionMNIST"
+  tracking_uri: "file:./mlruns"
+data:
+  root: "./data"
+  download: true
+  num_workers: 0
+  train_size: 55000
+  val_size: 5000
+  pin_memory: false
+model:
+  architecture: "lab3_cnn"
+training:
+  device: "auto" # auto | cpu | cuda | mps
+  epochs: 5
+  batch_size: 128
+  lr: 0.001
+  weight_decay: 0.0
+  optimizer: "adam"
+  momentum: 0.9
+  scheduler: "none" # none, step, cosine, plateau
+  step_size: 4
+  gamma: 0.5
+  plateau_patience: 2
+  grad_accum_steps: 1
+  checkpoint_every: 1
+  deterministic: true
+  # Optional: for quick development runs only; null means use entire dataset.
+  max_train_examples: null
+  max_val_examples: null
+  max_test_examples: null
+experiments:
+  workers: [0, 1, 2, 4, 8]
+  batches: [32, 64, 128, 256, 512]
+  optimizers: ["sgd", "adam"]
+  schedulers: ["step", "cosine", "plateau"]
+  batch_epochs: 5
+  optimizer_epochs: 10
+  accumulation_epochs: 5
+  resume_epochs: 5
+  resume_interrupt_epoch: 3
+  profile_export_trace: false
